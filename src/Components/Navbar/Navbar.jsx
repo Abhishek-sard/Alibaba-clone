@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
           <div className="section">
             <h3>Currency</h3>
-            <input type="text" placeholder="USD" className="input-field" />
+            <input type="option" placeholder="USD" className="input-field" />
             <div className="button-group">
               <button onClick={() => alert("USD")}>USD</button>
               <button onClick={() => alert("EUR")}>EUR</button>
@@ -56,11 +56,24 @@ const Navbar = () => {
       name: "Categories",
       icon: <MdOutlinePeopleAlt />,
       items: (
-        <ul>
-          <li>Furniture</li>
-          <li>Decor</li>
-          <li>Kitchen</li>
-        </ul>
+        <div>
+          <h1>Welcome to Alibaba.com</h1>
+          <button>sign in</button><br />
+          <p>Or, continue with:</p>
+          <img src="./public/facebook.jpg" alt="facebook logo" height="40px" width= "50px" />
+          <img src="./public/google.jpg" alt="google logo"  height="40px" width= "50px" />
+          <img src="./public/linkdin.jpg" alt="linkdin logo"  height="40px" width= "50px" />
+          <p>By signing in via social media, i agree to the 
+             <u>Alibaba.com Free membership Agreement</u> and 
+            Privacy Policy, and to receive emails about the platform's products and services.
+          </p>
+          <h4>My Alibaba</h4>
+          <h4>Orders</h4>
+          <h4>Messages</h4>
+          <h4>RFQs</h4>
+          <h4>Favorites</h4>
+
+        </div>
       ),
     },
   ];
