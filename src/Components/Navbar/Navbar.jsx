@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./Navbar.css";
 import { ImFlag } from "react-icons/im";
@@ -18,22 +19,55 @@ const Navbar = () => {
           <p>Shipping options and fees vary based on your location</p>
           <button onClick={() => console.log("Login button clicked")}>Sign in to add address</button>
           <u>or</u>
-          <input type="text" placeholder="" />
-          <input type="text" placeholder="please input the right zip/postal code." />
-          <button>save</button>
+          <input type="text" placeholder="Location" />
+          <input type="text" placeholder="Please input the correct zip/postal code" />
+          <button>Save</button>
         </div>
       ),
     },
-    { icon: <TbWorld />, items: ["Men", "Women", "Kids"] },
-    { icon: <MdOutlinePeopleAlt />, items: ["Furniture", "Decor", "Kitchen"] },
+    {
+      name: "Language & Currency",
+      icon: <TbWorld />,
+      items: (
+        <div className="dropdown-content">
+          <h1>Set language and currency</h1>
+          <p>Select your preferred language and currency. You can update the settings anytime.</p>
+          <div className="section">
+            <h3>Language</h3>
+            <input type="text" placeholder="English" className="input-field" />
+            <div className="button-group">
+              <button onClick={() => alert("English")}>English</button>
+              <button onClick={() => alert("Spanish")}>Spanish</button>
+              <button onClick={() => alert("French")}>French</button>
+            </div>
+          </div>
+          <div className="section">
+            <h3>Currency</h3>
+            <input type="text" placeholder="USD" className="input-field" />
+            <div className="button-group">
+              <button onClick={() => alert("USD")}>USD</button>
+              <button onClick={() => alert("EUR")}>EUR</button>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      name: "Categories",
+      icon: <MdOutlinePeopleAlt />,
+      items: (
+        <ul>
+          <li>Furniture</li>
+          <li>Decor</li>
+          <li>Kitchen</li>
+        </ul>
+      ),
+    },
   ];
 
   const handleCategoryClick = (index) => {
     setActiveCategory(activeCategory === index ? null : index);
   };
-  const handleDropdownClick = (event)=>{
-    event.stopPropagation();
-  }
 
   return (
     <nav className="navbar">
@@ -48,13 +82,9 @@ const Navbar = () => {
           <li key={index} onClick={() => handleCategoryClick(index)}>
             {category.icon} {category.name} {category.text}
             {activeCategory === index && (
-              <ul className="dropdown" onClick={handleDropdownClick}>
-                {Array.isArray(category.items) ? (
-                  category.items.map((item, itemIndex) => <li key={itemIndex}>{item}</li>)
-                ) : (
-                  <li>{category.items}</li>
-                )}
-              </ul>
+              <div className="dropdown" onClick={(e) => e.stopPropagation()}>
+                {category.items}
+              </div>
             )}
           </li>
         ))}
