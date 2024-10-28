@@ -1,0 +1,78 @@
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff;
+    text-align: left;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text button:hover {
+    background-color: #e68a00;
+}
+/*button*/
+.search-button {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff9900; /* Main button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.search-button svg {
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.search-button:hover {
+    background-color: #e68a00; 
+}
+
+.search-button:active {
+    transform: scale(0.95); 
+}
+.info-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;  
+    font-size: 1.2em; 
+    color:white;
+}
+

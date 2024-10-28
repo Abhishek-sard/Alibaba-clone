@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { ImFlag } from "react-icons/im";
-import { TbWorld } from "react-icons/tb";
+import { TbBackground, TbWorld } from "react-icons/tb";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 
 const Navbar = () => {
@@ -78,6 +78,7 @@ const Navbar = () => {
     },
   ];
 
+
   const handleCategoryClick = (index) => {
     setActiveCategory(activeCategory === index ? null : index);
   };
@@ -88,6 +89,7 @@ const Navbar = () => {
       <div className="navbar-logo">
         <a href="/">Alibaba.com</a>
       </div>
+
 
       {/* Categories with Dropdown */}
       <ul className="navbar-categories">
@@ -106,9 +108,12 @@ const Navbar = () => {
       {/* User Options */}
       <div className="navbar-user-options">
         <a href="/login">Sign Up</a>
+      </div><br />
+      <div className="con">
       </div>
     </nav>
   );
+  
 };
 
 export default Navbar;
