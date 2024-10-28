@@ -1,0 +1,42 @@
+.offerings-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #333;
+    gap: 30px;
+}
+
+.offerings-text h2 {
+    font-size: 3.0rem;
+    display: flex;
+    font-weight: px;
+    max-width: 700px; 
+    margin-left: -30%;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.offering-item {
+    text-align: center;
+}
+
+.offering-item h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4d00; /* Orange color for emphasis */
+    margin: 0;
+}
+
+.offering-item p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
