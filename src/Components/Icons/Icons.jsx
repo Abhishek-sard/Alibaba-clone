@@ -12,7 +12,7 @@ import { FaHeadphones } from "react-icons/fa6";
 import { CgGym } from "react-icons/cg";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { IoDiamondSharp } from "react-icons/io5";
-import { MdOutlineTableRestaurant } from "react-icons/md";
+// import { MdOutlineTableRestaurant } from "react-icons/md";
 
 export const Icons = () => {
   return (
@@ -94,10 +94,10 @@ export const Icons = () => {
           <IoDiamondSharp className="icon" />
           <p>Jewelry, Eyewear</p>
         </div>
-        <div className="icon-item">
+        {/* <div className="icon-item">
           <MdOutlineTableRestaurant className="icon" />
           <p>Furniture</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
