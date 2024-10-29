@@ -9,8 +9,9 @@
 }
 
 .offerings-text h2 {
-    font-size: 3.0rem;
+    font-size: 2.0rem;
     display: flex;
+    font-weight: bold;
     font-weight: px;
     max-width: 700px; 
     margin-left: -30%;
@@ -19,7 +20,7 @@
 .offerings-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 40px;
     margin-top: 10%;
     margin-left: 10%;
 }
@@ -33,6 +34,7 @@
     font-weight: bold;
     color: #ff4d00; /* Orange color for emphasis */
     margin: 0;
+    
 }
 
 .offering-item p {
@@ -40,3 +42,38 @@
     color: #666;
     margin-top: 5px;
 }
+/**************down side of icons style*************/
+
+.icons-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-right: 22px;
+
+
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 80px; /* Adjust icon size to medium */
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 50%;
+    padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon-item:hover .icon {
+    background-color: #f06c00; /* Hover color */
+    color: white;
+  }
+  
+  .icon-item:active .icon {
+    background-color: #0056b3; /* Clicked color */
+  }
+  
