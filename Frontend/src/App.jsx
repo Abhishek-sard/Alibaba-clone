@@ -7,6 +7,7 @@ import Cart from './Components/Cart/Cart';
 import Icons from './Components/Icons/Icons';
 import { Products } from './Components/Products/Products';
 import Sample from './Components/Sample/Sample';
+import { Girls } from './Components/Girls/Girls';
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Icons/>
       <Products/>
       <Sample/>
+      <Girls/>
     </>
   )
 }
