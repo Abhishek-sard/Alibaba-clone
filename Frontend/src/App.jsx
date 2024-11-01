@@ -6,6 +6,8 @@ import { Body } from './Components/Body/Body';
 import Cart from './Components/Cart/Cart';
 import Icons from './Components/Icons/Icons';
 import { Products } from './Components/Products/Products';
+import Sample from './Components/Sample/Sample';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <Cart/>
       <Icons/>
       <Products/>
+      <Sample/>
     </>
   )
 }
