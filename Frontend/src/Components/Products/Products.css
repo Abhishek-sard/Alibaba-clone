@@ -1,7 +1,7 @@
 /* Main container styling */
 .products-text-items {
     margin-top: 100px;
-    background-color: #f4f4f4;
+    background-color: #1e1919;
     padding: 60px;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -25,7 +25,7 @@
 
 /* Individual card styles */
 .products-card {
-    background-color: #f4f4f4f1;
+    background-color: #ffffff;
     border-radius: 10px;
     /* box-shadow: 0 4px 8px rgba(3, 0, 0, 0.1); */
     padding: 30px;
@@ -69,7 +69,7 @@
 .products-cart-card h6,
 .products-cart-card p,
 .products-best-seller h5 {
-    color: #333;
+    color: #150e0e;
     margin: 10px 0;
 }
 
