@@ -7,7 +7,7 @@ export const Body = () => {
   return (
     <>
       <div className="background">
-        <img src="./public/background.jpg" alt="" />
+        <img src="/background.jpg" alt="" />
         <div className="text">
           <h4 className="info-heading">
             <SiYoutubemusic />

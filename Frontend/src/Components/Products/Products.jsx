@@ -17,13 +17,13 @@ export const Products = () => {
             <h6>Most popular</h6>
             <p>5G SmartPhone</p>
             <img
-              src="./public/SmartPhone.jpg"
+              src="/SmartPhone.jpg"
               alt="5G Smartphone"
               className="products-top-image"
             />{" "}
             <br />
             <img
-              src="./public/SmartPhone1.jpg"
+              src="/SmartPhone1.jpg"
               alt="5G Smartphone"
               className="products-bottom-image"
             />
@@ -40,22 +40,22 @@ export const Products = () => {
           <div className="products-cart-card">
             <h6>119,000+ products added today</h6>
             <img
-              src="./public/jacket.jpg"
+              src="/jacket.jpg"
               alt="Jacket"
               className="products-top-image"
             />
             <img
-              src="./public/iphone.jpg"
+              src="/iphone.jpg"
               alt="iPhone"
               className="products-bottom-image"
             />
             <img
-              src="./public/airpod.jpg"
+              src="/airpod.jpg"
               alt="Airpod"
               className="products-bottom-image"
             />
             <img
-              src="./public/bottle.jpg"
+              src="/bottle.jpg"
               alt="Bottle"
               className="products-bottom-image"
             />
@@ -71,7 +71,7 @@ export const Products = () => {
 
           <div className="products-cart-card">
             <img
-              src="./public/15promax.jpg"
+              src="/15promax.jpg"
               alt="iPhone 15 Pro Max"
               className="products-top-image"
             />
@@ -79,7 +79,7 @@ export const Products = () => {
             <div className="products-best-seller">
               <h5>Deals on best sellers</h5>
               <img
-                src="./public/teeth.jpg"
+                src="/teeth.jpg"
                 alt="Teeth Care"
                 className="products-bottom-image"
               />

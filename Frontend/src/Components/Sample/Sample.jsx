@@ -7,17 +7,17 @@ export const Sample = () => {
       <div className="cart-factory">
         <div className="cart-factory__item">
           <h4>Get Sample</h4>
-          <img src="./public/Cloth.jpg" alt="" />
+          <img src="/Cloth.jpg" alt="" />
           <h5>view more</h5>
         </div>
         <div className="cart-factory-item">
           <h4>take factory live tour</h4>
-          <img src="./public/Factory1.jpg" alt="" />
+          <img src="/Factory1.jpg" alt="" />
           <h5>view more</h5>
         </div>
         <div className="cart-factory-item">
           <h4>Connect with top-ranking manufacture </h4>
-          <img src="./public/tin.jpg" alt="" />
+          <img src="/tin.jpg" alt="" />
           <h5>view more</h5>
         </div>
       </div>

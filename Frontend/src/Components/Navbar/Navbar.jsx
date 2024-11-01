@@ -60,9 +60,9 @@ const Navbar = () => {
           <h1>Welcome to Alibaba.com</h1>
           <button>sign in</button><br />
           <p>Or, continue with:</p>
-          <img src="./public/facebook.jpg" alt="facebook logo" height="40px" width= "50px" />
-          <img src="./public/google.jpg" alt="google logo"  height="40px" width= "50px" />
-          <img src="./public/linkdin.jpg" alt="linkdin logo"  height="40px" width= "50px" />
+          <img src="/facebook.jpg" alt="facebook logo" height="40px" width= "50px" />
+          <img src="/google.jpg" alt="google logo"  height="40px" width= "50px" />
+          <img src="/linkdin.jpg" alt="linkdin logo"  height="40px" width= "50px" />
           <p>By signing in via social media, i agree to the 
              <u>Alibaba.com Free membership Agreement</u> and 
             Privacy Policy, and to receive emails about the platform's products and services.
@@ -85,7 +85,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="./public/logo2.jpg" alt="Alibaba Logo" style={{ width: '50px', height: 'auto' }} />
+      <img src="/logo2.jpg" alt="Alibaba Logo" style={{ width: '50px', height: 'auto' }} />
       <div className="navbar-logo">
         <a href="/">Alibaba.com</a>
       </div>
