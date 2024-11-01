@@ -1,0 +1,97 @@
+/* Main container styling */
+.products-text-items {
+    margin-top: 100px;
+    background-color: #f4f4f4;
+    padding: 60px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.products-text-items h1 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: -600px;
+    font-weight: bold;
+
+}
+
+/* Flex container for the cards */
+.products-card-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Individual card styles */
+.products-card {
+    background-color: #f4f4f4f1;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(3, 0, 0, 0.1); */
+    padding: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.products-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.products-card h2 {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.products-card u {
+    color: #0073e6;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.products-cart-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.products-cart-card h6,
+.products-cart-card p,
+.products-best-seller h5 {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Image styling */
+.products-top-image,
+.products-bottom-image {
+    width: 130px;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.products-top-image:hover,
+.products-bottom-image:hover {
+    transform: scale(1.05);
+}
+
+/* Best-seller section */
+.products-best-seller {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
