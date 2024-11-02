@@ -1,7 +1,7 @@
-import React from 'react'
-import './Girls.css'
+import React from "react";
+import "./Girls.css";
 export const Girls = () => {
-  return (
-    <div>Girls</div>
-  )
-}
+  return <div className="girls">
+    div.
+  </div>;
+};
