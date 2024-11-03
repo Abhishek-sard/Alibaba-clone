@@ -5,7 +5,9 @@ export const Girls = () => {
   return (
     <div className="girls">
       <div className="text-header">
-        <h1>Trade with confidence from production quality to purchase protection</h1>
+        <h1 className="header-title">
+          Trade with confidence from production quality to purchase protection
+        </h1>
       </div>
       <div className="cart-container">
         <div className="cart">

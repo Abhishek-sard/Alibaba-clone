@@ -1,9 +1,23 @@
+.header-title {
+    background-image: url('Girl.jpg');
+    /* Add your background image */
+    background-size: cover;
+    /* Ensure the image covers the h1 */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    /* Ensure text is readable */
+    padding: 20px;
+    /* Add padding to make the background more visible */
+    border-radius: 8px;
+    /* Optional: add some border radius */
+}
 .cart-container {
     display: flex;
-    justify-content: space-between; /* Space between carts */
+    justify-content: space-between; /* Distribute space between the carts */
     gap: 20px; /* Space between each cart */
-    background-image: url('Girl.jpg'); /* Add the background image */
-    background-size: cover; /* Cover the entire container */
+    background-image: url('/path/to/background-image.jpg'); /* Add the background image */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
@@ -15,28 +29,7 @@
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    flex: 1; /* Allows the carts to grow and shrink equally */
-  }
-  
-  .cart h5 {
-    margin: 10px 0;
-  }
-  
-  .cart img {
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  button {
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #005bb5;
+    flex: 1; /* Allows the carts to grow/shrink equally */
+    margin: 10px;
   }
   
