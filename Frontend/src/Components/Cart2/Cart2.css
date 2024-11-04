@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch; /* Make all children have equal height */
+    background-image: url('Girl.jpg');
+    height: auto;
+    min-height: 150vh;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: white;
+}
+
+.text-writing {
+    width: 100%;
+    margin-top: 62px;
+}
+
+.cart2 {
+    background-color: rgba(93, 62, 49, 0.9);
+    padding: 1.9rem; 
+    border-radius: 10px;
+    width:0%;
+    height: 0%;
+    min-width: 400px;
+    max-width: 500px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.cart2 img {
+    width: 100%;
+    /* Ensure images fill their containers */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 1rem;
+    /* Space below the image */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.cart2 h1,
+.cart2 h5 {
+    margin-bottom: 1rem;
+}
+
+.cart2 p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns elements to the left */
+    align-items: center;
+    width: 100%; /* Make the container span the width of the cart */
+    margin-top: 1rem; /* Adds some spacing above the container */
+    gap: 0.5rem; /* Slight space between button and <u> */
+}
+
+.home-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #3a261c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: rgb(148, 96, 96);
+}
+
+.cart2 u {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white; /* Change color to make it stand out */
+    margin: 0; /* Ensure no additional margin */
+}
+
+
