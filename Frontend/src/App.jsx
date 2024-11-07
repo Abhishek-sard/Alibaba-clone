@@ -9,6 +9,7 @@ import { Products } from './Components/Products/Products';
 import Sample from './Components/Sample/Sample';
 import Cart2 from './Components/Cart2/Cart2'
 import Pointer from './Components/Pointer/Pointer';
+import Text from './Components/Text/Text';
 
 
 
@@ -24,6 +25,7 @@ function App() {
       <Sample/>
       <Cart2/>
       <Pointer/>
+      <Text/>
     </>
   )
 }

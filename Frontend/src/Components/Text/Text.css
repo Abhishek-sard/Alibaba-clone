@@ -1,0 +1,28 @@
+.Container-parts{
+    margin: 0;
+    padding: 0;
+    background-color: #f7f2f0;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 100px;
+}
+.text-parts{
+    align-items: center;
+}
+.text-parts h1{
+    color: #51200b;
+    padding: 32px;
+    font-weight: bold;
+}
+.text-parts h5{
+    columns: #747373;
+    padding: 12px;
+}
+.text-parts h6{
+    color:black;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 34px;
+    font-size: large;
+}
