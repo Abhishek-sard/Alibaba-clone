@@ -8,6 +8,7 @@ import Icons from './Components/Icons/Icons';
 import { Products } from './Components/Products/Products';
 import Sample from './Components/Sample/Sample';
 import Cart2 from './Components/Cart2/Cart2'
+import Pointer from './Components/Pointer/Pointer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <Products/>
       <Sample/>
       <Cart2/>
+      <Pointer/>
     </>
   )
 }
