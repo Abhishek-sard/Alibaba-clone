@@ -1,0 +1,47 @@
+.trade-container {
+    display: flex;
+    gap: 20px;
+    /* Space between left and right sections */
+}
+
+.card-large {
+    flex: 2;
+    /* Larger size for the left card */
+    position: relative;
+}
+
+.card-small-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between stacked cards */
+    flex: 1;
+    /* Smaller size for the right stacked cards */
+}
+
+.card-small,
+.card-large {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for text readability */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

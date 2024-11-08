@@ -11,6 +11,7 @@ import Cart2 from './Components/Cart2/Cart2'
 import Pointer from './Components/Pointer/Pointer';
 import Text from './Components/Text/Text';
 import Background from './Components/Background/Background';
+import Trade from './Components/Trade/Trade';
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Pointer/>
       <Text/>
       <Background/>
+      <Trade/>
     </>
   )
 }
