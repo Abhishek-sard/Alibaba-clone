@@ -1,0 +1,38 @@
+.background-color {
+    background-color: #4f1b0d;
+    margin-top: 45px;
+    padding: 95px;
+    text-align: center;
+}
+
+.grey-color {
+    text-align: center;
+    padding: 20px;
+}
+.grey-color h1{
+    color:white;
+    margin-bottom: 44px;
+    font-weight: bold;
+}
+.grey-color h5{
+    color: white;
+    margin-bottom: 55px;
+    font-weight: bold;
+}
+
+.btn-btn {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-btn:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
