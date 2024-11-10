@@ -1,12 +1,22 @@
 .trade-container {
     display: flex;
     gap: 20px;
-    /* Space between left and right sections */
+    margin: 45px;
+}
+.card-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 23px;
+    color: orangered;
+}
+.card-text{
+    text-align: center;
 }
 
 .card-large {
     flex: 2;
-    /* Larger size for the left card */
+    height: 500px;
+    width: 400px;
     position: relative;
 }
 
@@ -14,9 +24,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Space between stacked cards */
     flex: 1;
-    /* Smaller size for the right stacked cards */
+}
+.card-small img{
+    height: 239px;
 }
 
 .card-small,
