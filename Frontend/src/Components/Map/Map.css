@@ -1,0 +1,52 @@
+.map-text {
+    padding: 10px;
+}
+
+.map-text h2,
+.map-text h6 {
+    display: inline-block;
+    margin: 23px;
+    padding-left: 25px;
+}
+
+.map-text h2 {
+    margin-right: 10px;  
+    font-weight: bold;
+}
+
+.map-text h6 {
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    margin-left: 450px;
+    text-decoration: underline;
+}
+
+.map-country {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; 
+    margin-top: 20px;
+}
+
+.images-country {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-country img {
+    width: 50px;
+    height: 50px;
+}
+
+.images-country p {
+    margin-top: 5px;
+}
+.divider {
+    border: none;
+    border-top: 1px solid #0f0b0b; /* Adjust color and thickness */
+    width: 100%; 
+    margin: 80px auto; 
+  }
+  
