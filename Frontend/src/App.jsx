@@ -12,7 +12,7 @@ import Pointer from './Components/Pointer/Pointer';
 import Text from './Components/Text/Text';
 import Background from './Components/Background/Background';
 import Trade from './Components/Trade/Trade';
-
+import Map from './Components/Map/Map';
 
 
 
@@ -30,6 +30,7 @@ function App() {
       <Text/>
       <Background/>
       <Trade/>
+      <Map/>
     </>
   )
 }
