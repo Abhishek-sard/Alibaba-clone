@@ -90,14 +90,14 @@ export const Map = () => {
       </div>
       <div className="images-add">
         <div className="images-flex">
-          <img src="/id.png" alt="" height="40px"  width="40px" />
-          <img src="/dss.png" alt=""height="40px"  width="40px" />
-          <img src="/ssl.png" alt="" height="40px"  width="40px" />
-          <img src="/verisign.png" alt="" height="40px"  width="40px" />
-          <img src="/visa.png" alt="" height="40px"  width="40px"/>
-          <img src="/visaa.png" alt=""height="40px"  width="40px" />
-          <img src="/color.png" alt="" height="40px"  width="40px" />
-          <img src="/tt.png" alt="" height="40px"  width="40px"/>
+          <img src="/id.png" alt="" height="30px"  width="60px"  />
+          <img src="/dss.png" alt=""height="30px"  width="40px" />
+          <img src="/ssl.png" alt="" height="30px"  width="20px" />
+          <img src="/verisign.png" alt="" height="30px"  width="70px" />
+          <img src="/visa.png" alt="" height="30px"  width="50px"/>
+          <img src="/visaa.png" alt=""height="30px"  width="40px" />
+          <img src="/color.png" alt="" height="30px"  width="30px" />
+          <img src="/tt.png" alt="" height="30px"  width="40px"/>
         </div>
       </div>
     </div>

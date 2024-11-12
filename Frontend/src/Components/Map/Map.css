@@ -73,7 +73,7 @@ td {
 
 th {
     font-size: 18px;
- 
+
 }
 
 td {
@@ -103,4 +103,11 @@ th {
 
 .footer table {
     margin: auto;
+}
+
+.images-flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 65px;
 }
