@@ -111,3 +111,12 @@ th {
     align-items: center;
     margin: 65px;
 }
+
+.icons-items-added {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 65px;
+    height: 75px;
+    font-size: 30px;
+}

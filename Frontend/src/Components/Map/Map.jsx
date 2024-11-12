@@ -1,5 +1,17 @@
 import React from "react";
 import "./Map.css";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { IoLogoYoutube } from "react-icons/io";
+import { FaTiktok } from "react-icons/fa";
+
+
+
+
+
+
 
 export const Map = () => {
   return (
@@ -99,6 +111,14 @@ export const Map = () => {
           <img src="/color.png" alt="" height="30px"  width="30px" />
           <img src="/tt.png" alt="" height="30px"  width="40px"/>
         </div>
+      </div>
+      <div className="icons-items-added">
+      <IoLogoFacebook/>
+      <FaLinkedinIn/>
+      <FaTwitter/>
+      <GrInstagram/>
+      <IoLogoYoutube/>
+      <FaTiktok/>
       </div>
     </div>
   );
