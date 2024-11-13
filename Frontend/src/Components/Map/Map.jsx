@@ -119,6 +119,12 @@ export const Map = () => {
       <GrInstagram/>
       <IoLogoYoutube/>
       <FaTiktok/>
+      <div className="text-and-images">
+        
+      </div>
+      <p>Trade on the go with the <u>Alibaba.com Apps</u></p>
+      <img src="/appstore.png" alt="" height="40px" width="110px"/>
+      <img src="/googleplay.png" alt="" height="40px" width="110px" />
       </div>
     </div>
   );

@@ -112,11 +112,27 @@ th {
     margin: 65px;
 }
 
+
 .icons-items-added {
     display: flex;
-    gap: 20px;
+    flex-direction: row;
     align-items: center;
+    gap: 20px;
     margin: 65px;
-    height: 75px;
+    height: 85px;
+    margin-right: 79px;
+}
+
+.icons-items-added p {
+    text-align: right;
+    margin-right: 40px;
+}
+
+
+.icons-items-added svg {
     font-size: 30px;
+    color: #4a4646;
+}
+.icons-items-added img{
+    margin-right: 0;
 }
