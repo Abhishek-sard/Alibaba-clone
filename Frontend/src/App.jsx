@@ -13,6 +13,7 @@ import Text from './Components/Text/Text';
 import Background from './Components/Background/Background';
 import Trade from './Components/Trade/Trade';
 import Map from './Components/Map/Map';
+import End from './Components/End/End';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <Background/>
       <Trade/>
       <Map/>
+      <End/>
     </>
   )
 }
