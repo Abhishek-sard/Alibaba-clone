@@ -1,9 +1,9 @@
-
 import React, { useState } from "react";
 import "./Navbar.css";
 import { ImFlag } from "react-icons/im";
-import { TbBackground, TbWorld } from "react-icons/tb";
+import { TbWorld } from "react-icons/tb";
 import { MdOutlinePeopleAlt } from "react-icons/md";
+import { TfiMenuAlt } from "react-icons/tfi";
 
 
 const Navbar = () => {
@@ -59,13 +59,13 @@ const Navbar = () => {
       items: (
         <div>
           <h1>Welcome to Alibaba.com</h1>
-          <button>sign in</button><br />
+          <button>Sign in</button><br />
           <p>Or, continue with:</p>
-          <img src="/facebook.jpg" alt="facebook logo" height="40px" width= "50px" />
-          <img src="/google.jpg" alt="google logo"  height="40px" width= "50px" />
-          <img src="/linkdin.jpg" alt="linkdin logo"  height="40px" width= "50px" />
-          <p>By signing in via social media, i agree to the 
-             <u>Alibaba.com Free membership Agreement</u> and 
+          <img src="/facebook.jpg" alt="facebook logo" height="40px" width="50px" />
+          <img src="/google.jpg" alt="google logo" height="40px" width="50px" />
+          <img src="/linkedin.jpg" alt="linkedin logo" height="40px" width="50px" />
+          <p>By signing in via social media, I agree to the 
+             <u>Alibaba.com Free Membership Agreement</u> and 
             Privacy Policy, and to receive emails about the platform's products and services.
           </p>
           <h4>My Alibaba</h4>
@@ -73,48 +73,58 @@ const Navbar = () => {
           <h4>Messages</h4>
           <h4>RFQs</h4>
           <h4>Favorites</h4>
-
         </div>
       ),
     },
   ];
-
 
   const handleCategoryClick = (index) => {
     setActiveCategory(activeCategory === index ? null : index);
   };
 
   return (
-    <nav className="navbar">
-      <img src="/logo2.jpg" alt="Alibaba Logo" style={{ width: '50px', height: 'auto' }} />
-      <div className="navbar-logo">
-        <a href="/">Alibaba.com</a>
-      </div>
+    <div>
+      {/* First Navbar */}
+      <nav className="navbar">
+        <img src="/logo2.jpg" alt="Alibaba Logo" style={{ width: '50px', height: 'auto' }} />
+        <div className="navbar-logo">
+          <a href="/">Alibaba.com</a>
+        </div>
 
+        {/* Categories with Dropdown */}
+        <ul className="navbar-categories">
+          {categories.map((category, index) => (
+            <li key={index} onClick={() => handleCategoryClick(index)}>
+              {category.icon} {category.name} {category.text}
+              {activeCategory === index && (
+                <div className="dropdown" onClick={(e) => e.stopPropagation()}>
+                  {category.items}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
 
-      {/* Categories with Dropdown */}
-      <ul className="navbar-categories">
-        {categories.map((category, index) => (
-          <li key={index} onClick={() => handleCategoryClick(index)}>
-            {category.icon} {category.name} {category.text}
-            {activeCategory === index && (
-              <div className="dropdown" onClick={(e) => e.stopPropagation()}>
-                {category.items}
-              </div>
-            )}
-          </li>
-        ))}
-      </ul>
+        {/* User Options */}
+        <div className="navbar-user-options">
+          <a href="/login">Sign Up</a>
+        </div>
+      </nav>
 
-      {/* User Options */}
-      <div className="navbar-user-options">
-        <a href="/login">Sign Up</a>
-      </div><br />
-      <div className="con">
-      </div>
-    </nav>
+      {/* Second Navbar */}
+      <nav className="navbar2">
+        <ul>
+          <li><a href="#products"><TfiMenuAlt className="gap"/>All Categories</a></li>
+          <li><a href="#contact">Featured Selection</a></li>
+          <li><a href="#login">Trade Assurance</a></li>
+          <li><a href="#">Buyer Center</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Get the app</a></li>
+          <li><a href="#">Become a supplier</a></li>
+        </ul>
+      </nav>
+    </div>
   );
-  
 };
 
 export default Navbar;

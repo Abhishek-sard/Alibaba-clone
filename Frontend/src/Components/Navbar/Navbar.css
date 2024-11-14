@@ -185,6 +185,71 @@
     background-color: #45a049;
 }
 
+/* Styling for the second navbar */
+.navbar2 {
+    background-color: #050202;
+    color: white;
+}
+
+/* Styling the navbar list */
+.navbar2 ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    margin-left: 22px;
+    padding: 0;
+    width: 100%;
+    /* Ensure the navbar spans the full width */
+}
+
+/* Styling each list item */
+.navbar2 li {
+    display: flex;
+    align-items: center;
+    /* Align icons and text vertically */
+    font-size: 16px;
+    /* Set font size */
+}
+
+/* Styling the anchor links */
+.navbar2 li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a gap between the icon and text */
+.navbar2 li a .gap {
+    margin-right: 0.5rem;
+}
+
+/* Hover effect for links */
+.navbar2 li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the icons */
+.navbar2 .icon {
+    font-size: 20px;
+    /* Icon size */
+    color: white;
+    /* Icon color */
+}
+
+/* Move 4th, 5th, 6th, 7th items to the right with no gap */
+.navbar2 li:nth-child(n+4) {
+    margin-left: auto;
+}
+
+/* Remove gap between 4th, 5th, 6th, 7th items */
+.navbar2 li:nth-child(n+4):not(:first-child) {
+    margin-left: 2;
+}
+
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .navbar {
