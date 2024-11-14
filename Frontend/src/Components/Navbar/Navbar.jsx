@@ -5,6 +5,7 @@ import { ImFlag } from "react-icons/im";
 import { TbBackground, TbWorld } from "react-icons/tb";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 
+
 const Navbar = () => {
   const [activeCategory, setActiveCategory] = useState(null);
 

@@ -1,27 +1,35 @@
+/* Container Styles */
 .streamline-container {
     margin-left: 30px;
     margin-top: 85px;
 }
 
+/* Flexbox Content Layout */
 .content {
     display: flex;
+    flex-wrap: wrap;
+    /* Added to make the layout responsive */
+    justify-content: space-between;
+    gap: 20px;
 }
 
+/* Icons List Styles */
 .icons-lists {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
 }
 
+/* Icon Container */
 .icon-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     margin: 10px 0;
     cursor: pointer;
-
+    text-align: center;
 }
 
+/* Icon Items (Circles) */
 .icon-items {
     font-size: 24px;
     width: 60px;
@@ -34,8 +42,6 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-
-
 .icon-container.active .icon-items {
     background-color: #ee8f0a;
     color: white;
@@ -45,13 +51,15 @@
     background-color: #e0e0e0;
 }
 
+/* Icon Text Below Icons */
 .icon-text {
     margin-top: 8px;
-    font-size: 24px;
+    font-size: 16px;
+    /* Reduced font size for better alignment */
     color: #333;
-
 }
 
+/* Screenshot Display Styles */
 .screenshot-display {
     margin: 42px;
 }
@@ -59,6 +67,62 @@
 .screenshot-display img {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    /* Made responsive */
+    max-width: 450px;
+    /* Max width to avoid stretching */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+        /* Stacks the content vertically on medium screens */
+        gap: 20px;
+    }
+
+    .icon-items {
+        width: 50px;
+        /* Smaller icons for medium screens */
+        height: 50px;
+        font-size: 20px;
+        /* Smaller icons text */
+    }
+
+    .icon-text {
+        font-size: 18px;
+        /* Smaller text for icons */
+    }
+
+    .screenshot-display img {
+        max-width: 100%;
+        /* Ensure the image scales properly */
+    }
+}
+
+@media (max-width: 768px) {
+    .streamline-container {
+        margin-left: 10px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .icon-items {
+        width: 40px;
+        /* Further reduced icon size for mobile */
+        height: 40px;
+        font-size: 18px;
+        /* Smaller font size */
+    }
+
+    .icon-text {
+        font-size: 16px;
+        /* Even smaller text */
+    }
+
+    .screenshot-display img {
+        max-width: 100%;
+        /* Ensure responsiveness on mobile */
+    }
 }

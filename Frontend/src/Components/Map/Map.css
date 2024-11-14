@@ -1,3 +1,4 @@
+/* Base Styles */
 .map-text {
     padding: 10px;
 }
@@ -46,13 +47,11 @@
 .divider {
     border: none;
     border-top: 2px solid black;
-    /* Adds a solid black top border as the divider */
     width: 100%;
     margin: 80px auto;
 }
 
-
-/*footer*/
+/* Footer */
 .footer {
     padding: 30px;
     text-align: center;
@@ -73,7 +72,6 @@ td {
 
 th {
     font-size: 18px;
-
 }
 
 td {
@@ -82,7 +80,6 @@ td {
 
 td:hover {
     color: black;
-    /* Hover color remains black */
     text-decoration: underline;
     cursor: pointer;
 }
@@ -112,7 +109,6 @@ th {
     margin: 65px;
 }
 
-
 .icons-items-added {
     display: flex;
     flex-direction: row;
@@ -128,11 +124,135 @@ th {
     margin-right: 40px;
 }
 
-
 .icons-items-added svg {
     font-size: 30px;
     color: #4a4646;
 }
-.icons-items-added img{
+
+.icons-items-added img {
     margin-right: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .map-text h6 {
+        margin-left: 150px;
+        /* Adjust for smaller screens */
+    }
+
+    .map-country {
+        gap: 50px;
+        /* Reduce gap on medium screens */
+    }
+
+    .images-country img {
+        width: 40px;
+        /* Smaller image size */
+        height: 40px;
+    }
+
+    .divider {
+        margin: 50px auto;
+        /* Adjust margin */
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer table {
+        font-size: 14px;
+        /* Smaller font size */
+    }
+
+    .icons-items-added {
+        margin: 50px 0;
+        /* Reduce margin */
+    }
+
+    .images-flex {
+        margin: 40px 0;
+        /* Adjust margin */
+    }
+
+    .icons-items-added svg {
+        font-size: 25px;
+        /* Smaller icon size */
+    }
+}
+
+@media (max-width: 768px) {
+    .map-text h6 {
+        margin-left: 100px;
+        /* Adjust for smaller tablets */
+    }
+
+    .map-country {
+        gap: 30px;
+        /* Reduce gap further */
+    }
+
+    .images-country img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .divider {
+        margin: 40px auto;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+
+    .footer table {
+        font-size: 13px;
+        /* Smaller font size */
+    }
+
+    .icons-items-added {
+        margin: 40px 0;
+    }
+
+    .icons-items-added svg {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-text h6 {
+        margin-left: 0;
+        /* Remove margin on mobile */
+        font-size: 14px;
+    }
+
+    .map-country {
+        gap: 20px;
+        /* Minimal gap on mobile */
+    }
+
+    .images-country img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .divider {
+        margin: 20px auto;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer table {
+        font-size: 12px;
+    }
+
+    .icons-items-added {
+        margin: 30px 0;
+    }
+
+    .icons-items-added svg {
+        font-size: 18px;
+    }
 }

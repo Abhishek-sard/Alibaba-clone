@@ -1,8 +1,9 @@
+/* Base Styles */
 .platforms {
     display: flex;
     flex-direction: row;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     gap: 25px;
     height: 10vh;
     background-color: #f4f4f4;
@@ -14,8 +15,53 @@
     color: #333;
     text-align: center;
     cursor: pointer;
-} 
+}
 
 .platforms p:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .platforms {
+        height: 8vh;
+        /* Slightly reduce height for medium screens */
+        gap: 15px;
+        /* Reduce the gap between items */
+    }
+
+    .platforms p {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .platforms {
+        height: 6vh;
+        /* Reduce height for smaller screens */
+        gap: 10px;
+        /* Further reduce gap */
+    }
+
+    .platforms p {
+        font-size: 13px;
+        /* Further reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .platforms {
+        flex-direction: column;
+        /* Stack the items vertically on small screens */
+        height: auto;
+        /* Allow height to adjust automatically */
+        gap: 10px;
+        /* Keep a small gap */
+    }
+
+    .platforms p {
+        font-size: 12px;
+        /* Reduce font size for mobile */
+    }
 }

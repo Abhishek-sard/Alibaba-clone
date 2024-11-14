@@ -11,32 +11,45 @@
     color: black;
     font-size: 2rem;
     margin-bottom: 20px;
-    margin-left: -600px;
     font-weight: bold;
-
+    margin-left: 0;
+    /* Adjusted margin for better alignment */
 }
 
 /* Flex container for the cards */
 .products-card-container {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    /* Added wrap to ensure cards don’t overflow on smaller screens */
+    justify-content: center;
+    /* Center the cards */
 }
-
 
 /* Individual card styles */
 .products-card {
     background-color: #fffefe;
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(3, 0, 0, 0.1); */
     padding: 30px;
-    width: 400px;
+    width: 100%;
+    /* Default width for responsiveness */
+    max-width: 400px;
+    /* Set max-width for larger screens */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(3, 0, 0, 0.1);
+    /* Added box-shadow for better card definition */
+    transition: transform 0.3s ease;
 }
 
+.products-card:hover {
+    transform: translateY(-10px);
+    /* Slight lift on hover */
+}
 
+/* Product header styling */
 .products-card-header {
     display: flex;
     justify-content: space-between;
@@ -48,8 +61,7 @@
 .products-card h2 {
     color: black;
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .products-card u {
@@ -58,7 +70,7 @@
     margin: 0;
 }
 
-
+/* Cart card styling */
 .products-cart-card {
     background-color: #ffffff;
     padding: 15px;
@@ -94,4 +106,46 @@
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .products-card-container {
+        flex-direction: column;
+        /* Stack cards on smaller screens */
+        gap: 30px;
+        /* Add spacing between stacked cards */
+    }
+
+    .products-card {
+        width: 90%;
+        /* Allow cards to take more space on smaller screens */
+        max-width: none;
+        /* Disable max-width on smaller screens */
+    }
+
+    .products-text-items h1 {
+        font-size: 1.8rem;
+        /* Adjust header font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .products-card {
+        width: 100%;
+        /* Ensure cards take up full width on mobile */
+        max-width: none;
+    }
+
+    .products-top-image,
+    .products-bottom-image {
+        width: 100px;
+        height: 100px;
+        /* Smaller images for mobile */
+    }
+
+    .products-text-items h1 {
+        font-size: 1.5rem;
+        /* Adjust title font size for mobile */
+    }
 }

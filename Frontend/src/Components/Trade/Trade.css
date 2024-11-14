@@ -1,32 +1,41 @@
+/* Text Writer Styles */
 .text-writer h1 {
     color: rgb(82, 20, 20);
     text-align: center;
     margin-top: 95px;
     font-weight: bold;
 }
-.text-writer h4{
+
+.text-writer h4 {
     text-align: center;
     margin-top: 35px;
     color: rgb(144, 131, 131);
-    
 }
 
+/* Trade Container Styles */
 .trade-container {
     display: flex;
     gap: 20px;
     margin: 45px;
     margin-top: 45px;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
 }
-.card-title{
+
+/* Card Title Styles */
+.card-title {
     font-weight: bold;
     text-align: center;
     margin-bottom: 23px;
     color: orangered;
 }
-.card-text{
+
+/* Card Text Styling */
+.card-text {
     text-align: center;
 }
 
+/* Card Large Styling */
 .card-large {
     flex: 2;
     height: 500px;
@@ -34,16 +43,20 @@
     position: relative;
 }
 
+/* Card Small Container Styling */
 .card-small-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex: 1;
 }
-.card-small img{
+
+/* Card Small Image Styling */
+.card-small img {
     height: 239px;
 }
 
+/* Shared Card Styles */
 .card-small,
 .card-large {
     position: relative;
@@ -51,11 +64,13 @@
     overflow: hidden;
 }
 
+/* Card Image Styling */
 .card-img {
     width: 100%;
     height: auto;
 }
 
+/* Card Image Overlay Styling */
 .card-img-overlay {
     position: absolute;
     top: 0;
@@ -63,9 +78,92 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
     color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    /* Adjust the text heading styles for smaller screens */
+    .text-writer h1 {
+        font-size: 1.5rem;
+        /* Smaller font size */
+        margin-top: 50px;
+    }
+
+    .text-writer h4 {
+        font-size: 1rem;
+        /* Smaller font size */
+        margin-top: 20px;
+    }
+
+    /* Modify the trade container layout for smaller screens */
+    .trade-container {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .card-large {
+        width: 100%;
+        /* Full width on smaller screens */
+        height: auto;
+    }
+
+    .card-small-container {
+        flex: 1;
+    }
+
+    .card-small {
+        width: 100%;
+        /* Full width for small cards */
+    }
+
+    .card-img-overlay {
+        padding: 15px;
+    }
+}
+
+/* For very small screens, like mobile phones */
+@media screen and (max-width: 480px) {
+    .text-writer h1 {
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    .text-writer h4 {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+
+    .trade-container {
+        margin: 10px;
+        gap: 5px;
+    }
+
+    .card-large {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-small {
+        width: 100%;
+        /* Full width for small cards */
+    }
+
+    .card-img-overlay {
+        padding: 10px;
+    }
+
+    /* Adjust card title for small screens */
+    .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
 }

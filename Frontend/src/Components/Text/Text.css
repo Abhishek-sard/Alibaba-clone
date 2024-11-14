@@ -1,28 +1,122 @@
-.Container-parts{
+/* Container parts styling */
+.Container-parts {
     margin: 0;
     padding: 0;
     background-color: #f7f2f0;
-    align-items: center;
     text-align: center;
-    margin-top: 70px;
     padding-top: 100px;
+    width: 100%;
 }
-.text-parts{
+
+.text-parts {
     align-items: center;
+    padding: 0 15px;
+    /* Added padding for smaller screens */
 }
-.text-parts h1{
+
+/* Main header styling */
+.text-parts h1 {
     color: #51200b;
-    padding: 32px;
+    font-size: 2.5rem;
+    /* Default large font size */
     font-weight: bold;
+    padding: 32px 0;
+    text-align: center;
+    margin-bottom: 15px;
 }
-.text-parts h5{
-    columns: #747373;
+
+/* Text elements styling */
+.text-parts h5 {
+    color: #747373;
     padding: 12px;
+    font-size: 1.2rem;
+    margin: 0 0 10px;
 }
-.text-parts h6{
-    color:black;
+
+.text-parts h6 {
+    color: black;
     font-weight: bold;
     padding: 12px;
+    font-size: 1.25rem;
     margin-bottom: 34px;
-    font-size: large;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .Container-parts {
+        padding-top: 80px;
+    }
+
+    /* Heading font size adjustment for tablets */
+    .text-parts h1 {
+        font-size: 2rem;
+        /* Smaller font size for tablets */
+        padding: 20px 0;
+    }
+
+    .text-parts h5 {
+        font-size: 1rem;
+    }
+
+    .text-parts h6 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Make sure the container and text are responsive */
+    .Container-parts {
+        padding-top: 60px;
+    }
+
+    .text-parts {
+        padding: 10px;
+    }
+
+    .text-parts h1 {
+        font-size: 1.7rem;
+        /* Even smaller for smaller tablets and large phones */
+        padding: 15px 0;
+    }
+
+    .text-parts h5 {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .text-parts h6 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Mobile-specific styles */
+    .Container-parts {
+        padding-top: 50px;
+    }
+
+    .text-parts h1 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+        padding: 10px 0;
+    }
+
+    .text-parts h5 {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .text-parts h6 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* Additional styling for mobile - Adjust margins and paddings */
+    .text-parts {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
