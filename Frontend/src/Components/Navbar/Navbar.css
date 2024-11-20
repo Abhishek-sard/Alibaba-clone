@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    background-color: black;
+    background-color:rgb(19, 16, 16);
     color: #fff;
 }
 
@@ -185,68 +185,63 @@
     background-color: #45a049;
 }
 
-/* Styling for the second navbar */
+/* General Navbar2 Styling */
 .navbar2 {
-    background-color: #050202;
-    color: white;
-}
-
-/* Styling the navbar list */
-.navbar2 ul {
+    background-color:rgb(16, 15, 15);
+   
+    
+  }
+  
+  .navbar2-list {
     list-style-type: none;
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
     margin: 0;
-    margin-left: 22px;
     padding: 0;
-    width: 100%;
-    /* Ensure the navbar spans the full width */
-}
-
-/* Styling each list item */
-.navbar2 li {
-    display: flex;
-    align-items: center;
-    /* Align icons and text vertically */
-    font-size: 16px;
-    /* Set font size */
-}
-
-/* Styling the anchor links */
-.navbar2 li a {
-    color: white;
+  }
+  
+  .navbar2-list li {
+    margin: 0 10px;
+  }
+  
+  /* Links styling */
+  .navbar2-list li a {
     text-decoration: none;
-}
-
-/* Add a gap between the icon and text */
-.navbar2 li a .gap {
-    margin-right: 0.5rem;
-}
-
-/* Hover effect for links */
-.navbar2 li a:hover {
-    text-decoration: underline;
-}
-
-/* Styling the icons */
-.navbar2 .icon {
-    font-size: 20px;
-    /* Icon size */
+    color: #1e1d1d;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  /* Hover effect for links */
+  .navbar2-list li a:hover {
     color: white;
-    /* Icon color */
-}
-
-/* Move 4th, 5th, 6th, 7th items to the right with no gap */
-.navbar2 li:nth-child(n+4) {
-    margin-left: auto;
-}
-
-/* Remove gap between 4th, 5th, 6th, 7th items */
-.navbar2 li:nth-child(n+4):not(:first-child) {
-    margin-left: 2;
-}
-
-
+    text-decoration: underline;
+  }
+  
+  /* Icon styling */
+  .navbar2-icon {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar2 {
+      padding: 10px;
+    }
+  
+    .navbar2-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar2-list li {
+      margin: 5px 0;
+    }
+  }
+  
 
 
 
